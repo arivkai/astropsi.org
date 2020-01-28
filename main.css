@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
+
+.underlined {
+    position: relative;
+}
+
+.underlined::after {
+    content: ' ';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    width: 0;
+    border-bottom: solid 1px rgba(32, 32, 32, .7);
+    transition: 0.4s;
+}
+
+.underlined:hover::after {
+    width: 80%;
+    left: 10%;
+    transition: 0.4s;
+}
+
+.navbar-brand {
+    font-family: 'Oleo Script', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    color: #2297a2 !important;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link .underlined {
+    padding-bottom: 0 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.85);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255);
+}
+
+.active {
+    font-weight: 600;
+}
+
+.bg-teal {
+    background-color: #20c997;
+}
