@@ -1,1 +1,0 @@
-# astropsi.org
